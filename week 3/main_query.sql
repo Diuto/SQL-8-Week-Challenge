@@ -94,6 +94,8 @@ LEFT JOIN plans p
 WHERE plan_name <> 'trial';
 
 --#7: Customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
+/*Interpretation: If records were checked on the last day of 2020...
+...how many customers would each plan have, and what is the percentage distribution?*/
 WITH cte AS (
 		SELECT 
 		*,
